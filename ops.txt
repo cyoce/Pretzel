@@ -1,0 +1,21 @@
+Operators:
+
+ + 00 a + b
+ - 00 a - b
+ * 00 a * b
+ / 00 a / b
+ % 00 a % b
+ 
+[eq] 00 a == b
+[or] 00 a | b 
+[and] 00 a & b
+[xor] 00 a ^ b
+
+[fork1] 2110: a (b d) (c d)
+[fork2] 22200: a (b d e) (c d e)
+[hook1] 210: a c (b c)
+[hook2] 2100: a d (b c)
+[swap]  200: a c b
+
+[map] 10 # unary function a applied to every element of array b
+[zip] 200 # binary function a applied to every (b[i], c[i]) pair
